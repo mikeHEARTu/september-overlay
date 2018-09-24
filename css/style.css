@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	background: black;
+}
+#streamCanvas
+{
+	position: absolute;
+	width: 1920px;
+	height:1080px;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	background-image: url("../img/kingdom-come-screenshot.jpg");
+	background-size:cover;
+	background-position: center center;
+}
+.myNotification
+{
+	color:white;
+	text-transform: uppercase;
+	display: inline-block;
+	background:	linear-gradient(135deg,#935ff0,#6441a4);
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	font-size: 36px;
+	font-weight: lighter;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 60px;
+	padding: 0 15px;
+	margin: 10px 0;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	animation-name:slideIn;
+	animation-duration:1s;
+}
+.alertText 
+{
+	margin:0 25px;
+	animation-name:slideIn;
+	animation-duration:1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes slideIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateY(-10px);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
